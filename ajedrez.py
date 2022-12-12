@@ -109,9 +109,10 @@ def ajedrez (tablero, piezas):
     _ = "f8"
 
 
-def mover (tablero, piezas):
+def mover (tablero, piezas, ajedrez):
     print (tablero)
     print (piezas)
+    print (ajedrez)
     print ("¿Qué pieza quieres mover?")
     pieza = input()
     print ("¿A qué posición quieres mover la pieza?")
@@ -131,6 +132,6 @@ def imprimir_tablero (tablero, piezas):
 def main ():
     ajedrez(tablero, piezas)
     imprimir_tablero(tablero, piezas)
-    mover(tablero, piezas)
+    mover(tablero, piezas, ajedrez)
 
 main()
